@@ -65,20 +65,15 @@ To submit your work, push your changes to GitHub, render to PDF, and upload the 
 
 ## Your Analysis {.unnumbered}
 
-::: {.callout-important}
-## Instructions
-Delete this entire section (including the "Do Before Lab" and "Do During Lab" sections above) and replace it with your analysis responses. Use the numbered format below for your final submission.
-:::
+
 
 **Response 1: Spatial Trend Inconsistencies**
-*What patterns do you observe in the Mann-Kendall results across nearby stations? Are these results climatologically plausible? What does this suggest about single-station trend analysis?*
 
-There are some clusters of stations that seem to bias in the same direction, but they're not always consistent or well-defined.  It's hard to be sure if these are patterns, or just random noise.  This suggests that single-station trend analysis might be unreliable, especially if that station has limited data. 
+There are some clusters of stations in the Mann-Kendall results that seem to bias in the same direction, but they're not always consistent or well-defined.  It's hard to be sure if these are patterns, or just random noise.  This suggests that single-station trend analysis might be unreliable, especially if that station has limited data. 
 
 **Response 2: Nonstationary Model Uncertainty**
-*How does posterior uncertainty in return levels compare across the two nonstationary GEV models? Which model structure provides the most reliable estimates and why?*
 
-Location and Scale provides a much more accurate picture of uncertainty than the Location only model.  This is because trends in CO_2 are changing not just the severity of extreme weather (location) but also its variance (scale), and giving us fatter tails. The difference between the two models reflects this, with the 100-year return levels in the location and scale model. having a wider, flatter distribution than those of the location only model.  
+Of the two GEV models, Location and Scale provides a much more accurate picture of uncertainty than the Location only model.  This is because trends in CO_2 are changing not just the severity of extreme weather (location) but also its variance (scale), and giving us fatter tails. The difference between the results of the two models reflects this, with the 100-year return levels in the location and scale model having a wider, flatter distribution than those of the location only model.  
 
 **Response 3: Regional vs Single-Station Trade-offs**
 *Compare the bias-variance trade-offs between single-station and regional parameter estimation approaches. Under what conditions would you choose each strategy?*
@@ -92,8 +87,14 @@ It seems like regional parameter estimation is much better.  The only condition 
 **Response 4: Parameter Sharing Effects**
 *How does regional parameter sharing affect trend estimates and uncertainty? What are the practical implications for stations with limited data?*
 
+Regional parameter sharing can tighten up our uncertainty greatly.  The main practical implication for stations with limited data is that regional parameter sharing is critical for having return level estimates that reflect reality. 
+
 **Response 5: Regional Analysis for PS1**
 *How will these regional analysis techniques enhance your PS1 approach? What challenges do you anticipate in implementing regional models for your selected stations?*
+
+Regional analysis will be critical for tightening our uncertainty in PS1.  For at least the next few hundred years, we will be living in an era where we do not have enough data on any one location on earth to have very tight return level estimates without pulling in nearby locations. 
+
+Finding the correct balance between picking enough nearby stations to establish robust trends without venturing out so far geographically that the data is no longer representative of our main location may be a challenge.  
 
 ## Data Setup and Package Loading
 

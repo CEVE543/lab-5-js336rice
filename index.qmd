@@ -76,21 +76,18 @@ There are some clusters of stations in the Mann-Kendall results that seem to bia
 Of the two GEV models, Location and Scale provides a much more accurate picture of uncertainty than the Location only model.  This is because trends in CO_2 are changing not just the severity of extreme weather (location) but also its variance (scale), and giving us fatter tails. The difference between the results of the two models reflects this, with the 100-year return levels in the location and scale model having a wider, flatter distribution than those of the location only model.  
 
 **Response 3: Regional vs Single-Station Trade-offs**
-*Compare the bias-variance trade-offs between single-station and regional parameter estimation approaches. Under what conditions would you choose each strategy?*
 
 The uncertainty in the regional return levels is much tighter than that of single-station.  Other than that, the lines aren't very far apart. 
 
 The greatest difference in variance of parameters between single-station and regional parameter estimatuon comes in the scale parameter, where variance is much higher for the single-station beta_mu 
 
-It seems like regional parameter estimation is much better.  The only condition in which single-station would be preferred is if you both cared a lot about storm behavior in one specific location, and also had a very long data record in that area. 
+It seems like regional parameter estimation is much better than single-station.  The only condition in which single-station would be preferred is if one both cared a lot about storm behavior in one specific location, and also had a very long data record in that area. 
 
 **Response 4: Parameter Sharing Effects**
-*How does regional parameter sharing affect trend estimates and uncertainty? What are the practical implications for stations with limited data?*
 
 Regional parameter sharing can tighten up our uncertainty greatly.  The main practical implication for stations with limited data is that regional parameter sharing is critical for having return level estimates that reflect reality. 
 
 **Response 5: Regional Analysis for PS1**
-*How will these regional analysis techniques enhance your PS1 approach? What challenges do you anticipate in implementing regional models for your selected stations?*
 
 Regional analysis will be critical for tightening our uncertainty in PS1.  For at least the next few hundred years, we will be living in an era where we do not have enough data on any one location on earth to have very tight return level estimates without pulling in nearby locations. 
 
